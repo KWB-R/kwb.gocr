@@ -1,9 +1,17 @@
 Package: kwb.gocr
-Maintainer: Hauke Sonnenberg <hauke.sonnenberg@kompetenz-wasser.de>
-Imports: bitops, kwb.utils
-Author: Hauke Sonnenberg
+Title: Interface to gocr program by Joerg Schulenburg
+    (http://jocr.sourceforge.net/)
 Version: 0.0.99
+Author: Hauke Sonnenberg
+Maintainer: Hauke Sonnenberg
+    <hauke.sonnenberg@kompetenz-wasser.de>
+Description: Wrapper functions to gocr functionality (Optical
+    Character Recognition).
 License: GPL
-Title: Interface to gocr program by Joerg Schulenburg (http://jocr.sourceforge.net/)
-Description: Wrapper functions to gocr functionality (Optical Character Recognition).
-RoxygenNote: 6.0.1
+Imports: 
+    bitops,
+    kwb.utils
+Remotes: 
+    github::kwb-r/kwb.utils
+Encoding: UTF-8
+RoxygenNote: 6.1.1
