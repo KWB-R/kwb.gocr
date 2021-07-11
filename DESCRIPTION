@@ -1,7 +1,7 @@
 Package: kwb.gocr
 Title: Interface to gocr program by Joerg Schulenburg
     (http://jocr.sourceforge.net/)
-Version: 0.0.99
+Version: 0.1.0
 Authors@R: 
     c(person(given = "Hauke",
              family = "Sonnenberg",
