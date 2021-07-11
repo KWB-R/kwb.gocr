@@ -4,8 +4,13 @@
 \alias{gocrRun}
 \title{Run gocr on an Image File}
 \usage{
-gocrRun(config, useBatch = TRUE, waitForBatch = TRUE, opendir = TRUE,
-  dbg = TRUE)
+gocrRun(
+  config,
+  useBatch = TRUE,
+  waitForBatch = TRUE,
+  opendir = TRUE,
+  dbg = TRUE
+)
 }
 \arguments{
 \item{config}{gocr configuration as returned by \code{\link{gocrConfig}}}

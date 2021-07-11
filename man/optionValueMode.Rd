@@ -4,10 +4,16 @@
 \alias{optionValueMode}
 \title{Value for Mode Option}
 \usage{
-optionValueMode(useDatabase = FALSE, layoutAnalysis = FALSE,
-  doNotCompare = FALSE, doNotDivide = FALSE, doNotCorrect = FALSE,
-  characterPacking = FALSE, extendDatabase = FALSE,
-  switchOffEngine = FALSE)
+optionValueMode(
+  useDatabase = FALSE,
+  layoutAnalysis = FALSE,
+  doNotCompare = FALSE,
+  doNotDivide = FALSE,
+  doNotCorrect = FALSE,
+  characterPacking = FALSE,
+  extendDatabase = FALSE,
+  switchOffEngine = FALSE
+)
 }
 \arguments{
 \item{useDatabase}{(2) use database to recognize characters which are not

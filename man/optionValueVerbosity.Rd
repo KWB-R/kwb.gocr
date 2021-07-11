@@ -4,8 +4,14 @@
 \alias{optionValueVerbosity}
 \title{Value for Option Verbosity}
 \usage{
-optionValueVerbosity(printMore = 1, listShapes = 1, listPattern = 1,
-  printPattern = 1, printDebug = 1, createOutPng = 0)
+optionValueVerbosity(
+  printMore = 1,
+  listShapes = 1,
+  listPattern = 1,
+  printPattern = 1,
+  printDebug = 1,
+  createOutPng = 0
+)
 }
 \arguments{
 \item{printMore}{(1) print more info}

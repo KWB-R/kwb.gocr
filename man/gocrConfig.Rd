@@ -4,12 +4,24 @@
 \alias{gocrConfig}
 \title{Create a gocr Configuration}
 \usage{
-gocrConfig(inputfile, showhelp = FALSE, outputfile = "",
-  errorfile = "", progressfile = "", databasepath = "",
-  outputformat = "", greylevel = 0, dustsize = -1, spacewidth = 0,
-  verbosity = 0, limitVerbosityToChars = "",
-  limitRecognitionToChars = "", certainty = 95, mode = 0,
-  onlyRecogniseNumbers = FALSE)
+gocrConfig(
+  inputfile,
+  showhelp = FALSE,
+  outputfile = "",
+  errorfile = "",
+  progressfile = "",
+  databasepath = "",
+  outputformat = "",
+  greylevel = 0,
+  dustsize = -1,
+  spacewidth = 0,
+  verbosity = 0,
+  limitVerbosityToChars = "",
+  limitRecognitionToChars = "",
+  certainty = 95,
+  mode = 0,
+  onlyRecogniseNumbers = FALSE
+)
 }
 \arguments{
 \item{inputfile}{-i file: read input from file (or stdin if file is a single
