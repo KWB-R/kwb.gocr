@@ -45,7 +45,8 @@ gocrDownload <- function(version_number = "048",
     kwb.utils::catAndRun(messageText = msg,
                          expr = {
                            download.file(url = paths$exe_source,
-                                         destfile = paths$exe_target)
+                                         destfile = paths$exe_target,
+                                         mode = "wb")
                          })
     if (!file.exists(paths$exe_target)) {
       stop(
