@@ -18,7 +18,7 @@
 #'   with default values set where needed)
 #' 
 #' @export
-#'  
+#' @importFrom kwb.utils cmdLinePath createDirectory hsShell
 gocrRun <- function(
   config, useBatch = TRUE, waitForBatch = TRUE, opendir = TRUE, dbg = TRUE
 ) 
@@ -143,7 +143,11 @@ gocrConfig <- function(
   )
 }
 
-# setDefaultsInSetting ---------------------------------------------------------
+#' setDefaultsInSetting --------------------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom kwb.utils catIf
 setDefaultsInSetting <- function(config, inputBasename, gocrDir, dbg = TRUE)
 {
   # We will always use an output file
@@ -204,7 +208,11 @@ writeAndRunBatchFile <- function(
   return (0)
 }
 
-# writeBatchFile ---------------------------------------------------------------
+#' writeBatchFile --------------------------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom kwb.utils catIf
 writeBatchFile <- function(config, inputBasename, gocrDir, dbg = TRUE)
 {
   batfilename <- sprintf("run_gocr_%s.bat", inputBasename)
@@ -220,7 +228,11 @@ writeBatchFile <- function(config, inputBasename, gocrDir, dbg = TRUE)
   batfile
 }
 
-# runBatchFile -----------------------------------------------------------------
+#' runBatchFile ----------------------------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom kwb.utils catIf runBatchfileInDirectory
 runBatchFile <- function(
   batfile, runDir = tempdir(), waitForBatch = TRUE, dbg = TRUE
 )
@@ -347,8 +359,11 @@ appendPathIfNotEqual <- function(
   optionString
 }
 
-# stopOnErrorAndDeleteErrorFile ------------------------------------------------
-
+#' stopOnErrorAndDeleteErrorFile -----------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom kwb.utils catIf collapsed isNullOrEmpty
 stopOnErrorAndDeleteErrorFile <- function(errCode, errorFile, mydebug = FALSE)
 {
   errorMessages <- NULL
@@ -405,8 +420,11 @@ optionValueVerbosity <- function(
     printDebug * 16 + createOutPng * 32    
 }
 
-# modeOptionIsSet --------------------------------------------------------------
-
+#' modeOptionIsSet --------------------------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom bitops bitAnd
 modeOptionIsSet <- function(optionName, modeValue)
 {
   bitValue <- getModeValues()[optionName]
@@ -473,8 +491,11 @@ optionValueMode <- function
   ))
 }
 
-# getModeValues ----------------------------------------------------------------
-
+#' getModeValues ---------------------------------------------------------------
+#' @noRd
+#' @noMd
+#' @keywords internal
+#' @importFrom stats setNames
 getModeValues <- function()
 {
   modeValueNames <- c(

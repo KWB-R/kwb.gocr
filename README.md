@@ -3,10 +3,11 @@
 [![codecov](https://codecov.io/github/KWB-R/kwb.gocr/branch/main/graphs/badge.svg)](https://codecov.io/github/KWB-R/kwb.gocr)
 [![Project Status](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/kwb.gocr)]()
+[![R-Universe_Status_Badge](https://kwb-r.r-universe.dev/badges/kwb.gocr)](https://kwb-r.r-universe.dev/)
 
 # kwb.gocr
 
-Wrapper functions to gocr functionality (Optical
+Wrapper functions to [gocr](http://jocr.sourceforge.net/) functionality (Optical 
 Character Recognition).
 
 ## Installation
