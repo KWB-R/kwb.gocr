@@ -9,10 +9,11 @@
 #' @return downloads gocr executable to target directory and returns path
 #' @export
 #' @importFrom kwb.utils catAndRun resolve
+#' @importFrom utils download.file
 #' @examples
-#' gocr_download(version_number = "048")
-#' gocr_download(version_number = "049")
-gocr_download <- function(version_number = "048",
+#' gocrDownload(version_number = "048")
+#' gocrDownload(version_number = "049")
+gocrDownload <- function(version_number = "048",
                           overwrite = FALSE,
                           target_dir = file.path(system.file(package = "kwb.gocr"),
                                                  "extdata/gocr")) {
@@ -25,10 +26,11 @@ gocr_download <- function(version_number = "048",
       exe_source = "<base_url>/<exe_name>",
       exe_target = "<tdir>/<exe_name>"
     )
-  
-  if (!file.exists(paths$exe_target) || overwrite) {
-    paths <- kwb.utils::resolve(paths_list)
+
+  paths <- kwb.utils::resolve(paths_list)
     
+  if (!file.exists(paths$exe_target) || overwrite) {
+
     if (!dir.exists(paths$tdir)) {
       dir.create(paths$tdir, recursive = TRUE)
     }
