@@ -28,5 +28,7 @@ Download gocr executable
 }
 \examples{
 gocrDownload(version_number = "048")
+\dontrun{
 gocrDownload(version_number = "049")
+}
 }

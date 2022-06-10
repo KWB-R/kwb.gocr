@@ -12,7 +12,9 @@
 #' @importFrom utils download.file
 #' @examples
 #' gocrDownload(version_number = "048")
+#' \dontrun{
 #' gocrDownload(version_number = "049")
+#' }
 gocrDownload <- function(version_number = "048",
                           overwrite = FALSE,
                           target_dir = file.path(system.file(package = "kwb.gocr"),
