@@ -5,8 +5,9 @@
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/kwb.gocr)]()
 [![R-Universe_Status_Badge](https://kwb-r.r-universe.dev/badges/kwb.gocr)](https://kwb-r.r-universe.dev/)
 
-Wrapper functions to [gocr](http://jocr.sourceforge.net/) functionality (Optical 
+Wrapper functions to [gocr](https://www-e.ovgu.de/jschulen/ocr/) functionality (Optical 
 Character Recognition).
+
 
 ## Installation
 

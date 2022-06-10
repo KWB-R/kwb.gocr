@@ -1,6 +1,5 @@
 Package: kwb.gocr
-Title: Interface to gocr program by Joerg Schulenburg
-    (http://jocr.sourceforge.net/)
+Title: Interface to gocr Program
 Version: 0.1.0
 Authors@R: c(
     person("Hauke", "Sonnenberg", , "hauke.sonnenberg@kompetenz-wasser.de", role = c("aut", "cre"),
@@ -11,8 +10,9 @@ Authors@R: c(
     person("MIA-CSO", role = "fnd"),
     person("Kompetenzzentrum Wasser Berlin gGmbH (KWB)", role = "cph")
   )
-Description: Wrapper functions to gocr functionality (Optical
-    Character Recognition).
+Description: Wrapper functions to the gocr (Optical Character Recognition)
+    program developed by Jens Schulenberg
+    (https://www-e.ovgu.de/jschulen/ocr/)
 License: MIT + file LICENSE
 URL: https://github.com/KWB-R/kwb.gocr
 BugReports: https://github.com/KWB-R/kwb.gocr/issues
